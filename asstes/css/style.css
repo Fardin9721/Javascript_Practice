@@ -1,0 +1,15 @@
+.section{
+    max-width: 1400px;
+    margin: auto;
+    background-color: rgb(87, 87, 209);
+}
+.btn{
+    background-color: darkcyan;
+    padding:10px 20px;
+    float: right;
+    margin: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
