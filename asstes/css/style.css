@@ -1,7 +1,13 @@
-.section{
+.container{
     max-width: 1400px;
     margin: auto;
+}
+.sectionA{
     background-color: rgb(87, 87, 209);
+}
+.sectionB{
+    background-color: aqua;
+    text-align: center;
 }
 .btn{
     background-color: darkcyan;
