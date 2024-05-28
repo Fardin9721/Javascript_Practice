@@ -9,6 +9,10 @@
     background-color: aqua;
     text-align: center;
 }
+.sectionC{
+    text-align: center;
+    background-color: blueviolet;
+}
 .btn{
     background-color: darkcyan;
     padding:10px 20px;
