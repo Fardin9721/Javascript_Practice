@@ -77,3 +77,37 @@ stob.sort(function(a,b){
     return b-a;
 });
 console.log(stob);
+// array ext
+const airDrop =["Sound","Bass","Towtor","NOC","ACO"];
+function airDropF(value){
+    console.log(value);
+};
+airDrop.forEach(airDropF)
+const water=["Mom watr","Sun","Sena","Awuaya"];
+water.push("Papsi");
+function waterF(value){
+    console.log(value);
+};
+water.forEach(waterF);
+
+const busse =["Scania","Hondai","Hino","Asoklalend"];
+const car =[10,1,2,3,4,54,564,65,];
+car.sort(function(a,b){
+    return a -b;
+})
+console.log(car);
+// Date Zoon
+const d =new Date("2024-05");
+console.log(d);
+// Date Compare 
+let text2 ="";
+const today =new Date();
+const soumday =new Date();
+soumday.setFullYear(2025, 0, 20);
+if(soumday > today){
+    text2="This day Before 2025";
+}
+else{
+    text2="This day After 2025";
+};
+document.getElementById("datdi").innerHTML =text2;

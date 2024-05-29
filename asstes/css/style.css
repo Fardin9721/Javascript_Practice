@@ -1,17 +1,19 @@
 .container{
     max-width: 1400px;
     margin: auto;
+    text-align: center;
 }
 .sectionA{
     background-color: rgb(87, 87, 209);
 }
 .sectionB{
     background-color: aqua;
-    text-align: center;
 }
 .sectionC{
-    text-align: center;
     background-color: blueviolet;
+}
+.sectionD{
+    background-color: blue;
 }
 .btn{
     background-color: darkcyan;
