@@ -111,3 +111,31 @@ else{
     text2="This day After 2025";
 };
 document.getElementById("datdi").innerHTML =text2;
+// Math area
+const desimalMath =(Math.round(5.7));
+document.getElementById('mathD').innerHTML ="The Math.round ="+ desimalMath;
+const desimalMath2 = Math.ceil(2.4);
+document.getElementById('mathE').innerHTML = "The Math.ceil is ="+ desimalMath2 +" Math.ceil(x) returns the value of x rounded up to its nearest integer:";
+const desimalMath3 = Math.floor(2.9);
+document.getElementById('mathF').innerHTML = "Math.floor "+ desimalMath3;
+const desimalMath4 = Math.trunc(-2.2);
+document.getElementById('mathG').innerHTML ="Math.trunc "+ desimalMath4;
+const desimalMath5 = Math.sign(-4);
+document.getElementById('mathh').innerHTML ="Math.sign "+ desimalMath5;
+const desimalMath6 = Math.pow(7,2);
+document.getElementById('math1').innerHTML ="Math.pow "+ desimalMath6;
+const desimalMath7 = Math.sqrt(5);
+document.getElementById('math2').innerHTML ="Math.sqrt "+ desimalMath7;
+const desimalMath8 = Math.sin(90*Math.PI/180);
+document.getElementById('math3').innerHTML ="Math.sin "+ desimalMath8;
+const desimalMath9 = Math.min(21,122,12,43,34,434,6,65,56,);
+document.getElementById('math4').innerHTML ="Math.min "+ desimalMath9;
+const desimalMath10 = Math.max(21,122,12,43,34,434,6,65,56,);
+document.getElementById('math5').innerHTML ="Math.max "+ desimalMath10;
+const desimalMath11 = Math.floor(Math.random()*7)+1;
+document.getElementById('math6').innerHTML ="Math.random "+ desimalMath11;
+function knoMath (min , max){
+    return Math.floor(Math.random()*(max-min)) +min;
+}
+console.log();
+document.getElementById('math7').innerHTML ="The Random Number in use function "+ knoMath(1,10);

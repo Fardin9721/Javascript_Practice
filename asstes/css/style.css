@@ -15,6 +15,10 @@
 .sectionD{
     background-color: blue;
 }
+.sectionE{
+    background-color: yellowgreen;
+    color: #000;
+}
 .btn{
     background-color: darkcyan;
     padding:10px 20px;
