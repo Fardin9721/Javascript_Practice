@@ -139,3 +139,10 @@ function knoMath (min , max){
 }
 console.log();
 document.getElementById('math7').innerHTML ="The Random Number in use function "+ knoMath(1,10);
+// Boolean Part
+Boolean(10>9);
+document.getElementById('boo1').innerHTML=Boolean(10>9) +" And "+Boolean(10<9);
+let boo = 400 ;
+let ood = 400 ;
+let yoo = boo==ood;
+document.getElementById('boo2').innerHTML ="400 equal 400 is "+ Boolean(yoo);
