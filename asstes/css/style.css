@@ -3,6 +3,16 @@
     margin: auto;
     text-align: center;
 }
+.btn{
+    background-color: darkcyan;
+    padding:10px 20px;
+    float: right;
+    margin: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
 .sectionA{
     background-color: rgb(87, 87, 209);
 }
@@ -19,13 +29,6 @@
     background-color: yellowgreen;
     color: #000;
 }
-.btn{
-    background-color: darkcyan;
-    padding:10px 20px;
-    float: right;
-    margin: 10px 20px;
-    color: #fff;
-    font-size: 14px;
-    border: 1px solid #fff;
-    border-radius: 15px;
+.comparison_area{
+    background-color: brown;
 }

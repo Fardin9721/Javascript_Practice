@@ -16,7 +16,6 @@ const leon ={
     },
 };
 
-
 leon.job();
 console.log(leon);
 
@@ -146,3 +145,21 @@ let boo = 400 ;
 let ood = 400 ;
 let yoo = boo==ood;
 document.getElementById('boo2').innerHTML ="400 equal 400 is "+ Boolean(yoo);
+// Comparison Area
+let comx = 5;
+let comy = "6";
+document.getElementById('com1').innerHTML =comx == comy;
+let inTime = 10.11;
+officeTime=(inTime<10.15)?"You are in right time" : "you are late";
+document.getElementById('com2').innerHTML = "Office Time "+officeTime;
+let dreamPC = 'no';
+console.log(dreamPC && "react" ? "you have dream pc" : " you don't have")  
+let comAge = `8`;
+comAge = Number(comAge);
+if(isNaN(comAge)){
+    text3 ="I's Not A Number";
+}
+else{
+    text3 = comAge > 18 ? "You are Old" : "You are not old";
+}
+document.getElementById('com3').innerHTML =text3;
