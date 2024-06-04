@@ -163,3 +163,51 @@ else{
     text3 = comAge > 18 ? "You are Old" : "You are not old";
 }
 document.getElementById('com3').innerHTML =text3;
+// Switch Part 
+let day;
+switch(new Date().getDay()){
+    case 0:
+        day ="Sunday";
+        break;
+    case 1:
+        day="Monday";
+        break;
+    case 2:
+        day="Tuesday";
+        break;
+    case 3:
+        day="Wednesday";
+        break;
+    case 4:
+        day ="Thursday";
+        break;
+    case 5:
+        day ="Friday";
+        break;
+    case 6:
+        day ="Saturday";
+};
+document.getElementById('switch1').innerHTML ="Today is "+ day;
+const speed = 21;
+if(speed >= 0 && speed<= 10){
+    text4="You bike now Under 10kmp";
+}
+else if(speed >=11 && speed<=20){
+    text4 ="You bike now Under 20kmp"
+}
+else{
+    text4="Over Speed";
+}
+document.getElementById('else1').innerHTML = text4;
+let pcOn = 0;
+switch(pcOn){
+    case 0:
+        text5="Your PC is OFF";
+        break;
+    case 1:
+        text5="Your PC is ON";
+        break;
+    default:
+        text5 ="No Valuse Found";
+}
+document.getElementById('else2').innerHTML =text5;
