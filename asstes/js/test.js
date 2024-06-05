@@ -211,3 +211,36 @@ switch(pcOn){
         text5 ="No Valuse Found";
 }
 document.getElementById('else2').innerHTML =text5;
+// For Loop Part
+const stb =["Telecast","ABV Neptune","Nstv","Gamma Tech","ABV Neptune 8101","ABV Neptune 8100","ABV Neptune 8901","ABV Neptune 8909","ABV Neptune 8920"];
+let show ="";
+for(i=0; i<stb.length ;i++){
+    show += stb[i] +"<br>";
+};
+document.getElementById('loop1').innerHTML = show;
+// For in
+const stbProfile = {
+    name:"A.Razzak KG",
+    phnNumber: '01723357722',
+    address:"Kurigram",
+    stbNumber:507020,
+    smcNumber:800556400,
+};
+let txt ="";
+for(let proFil in stbProfile){
+    txt += stbProfile[proFil]+"<br>";
+};
+document.getElementById('loop2').innerHTML=txt;
+const numbers = [45, 4, 9, 16, 25];
+let tes = "";
+for(let jer in numbers){
+    tes+= numbers[jer] +"<br>";
+};
+document.getElementById('loop3').innerHTML=tes;
+const numbers2 = [45, 4, 9, 16, 25];
+let kacu ="";
+numbers2.forEach(fortest);
+document.getElementById('loop4').innerHTML= kacu;
+function fortest(value){
+    kacu +=value+"<br>";
+}
