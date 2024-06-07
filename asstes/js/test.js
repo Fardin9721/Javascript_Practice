@@ -244,3 +244,62 @@ document.getElementById('loop4').innerHTML= kacu;
 function fortest(value){
     kacu +=value+"<br>";
 }
+const bike =["Suziki","Yamaha","Honda","Bajaj","TVS","Hero"];
+let bikeList ="";
+for(i=0;i<bike.length;i++){
+    bikeList += bike[i] +"<br>";
+};
+document.getElementById('bikeName').innerHTML =bikeList;
+const japanBike ={bikeName:"Suziki",bikeModel:"Gixxer",bikeCc:"155cc",bikeMiles:"45kkmp",bikeEnginOil:"Motul 10W40"};
+let bikeConfig ="";
+for (let sumthik in japanBike){
+    bikeConfig+=japanBike[sumthik]+"<br>";
+};
+document.getElementById('bikeName1').innerHTML=bikeConfig;
+const numTest =[435,78,234,67,43,98,3412,23,43,54,65,76,];
+let printF ="";
+numTest.forEach(numTests);
+document.getElementById('bikeName2').innerHTML =printF;
+function numTests(value){
+    printF+=value+"<br>";
+};
+const mobileNumber =[978543,7138492309,71923487 ,7923472983,90182748,9237489,54873,13842793,]
+let printText ="";
+mobileNumber.forEach(mobiless);
+function mobiless(value){
+    printText += value +"<br>";
+}
+document.getElementById('bikeName3').innerHTML =printText;
+const waterBatol =["Sun water","MOM","Aquya","habijanbi","Sun water","MOM","Aquya","habijanbi"];
+let dhori ="";
+waterBatol.forEach(waterBatolList);
+function waterBatolList(value){
+    dhori+=value +"<br>";
+}
+document.getElementById('bikeName3').innerHTML = dhori;
+const pcPower ={cpu:"AMD 5700G",moterbord:"MSI 550",ram:"8GB",ssd:512};
+let pcList ="";
+for (let varent in pcPower){
+    pcList += pcPower[varent] +"<br>";
+}
+document.getElementById('bikeName4').innerHTML =pcList;
+// For Of 
+let as = "LEON";
+let ofpri ="";
+for (let x of as){
+    ofpri += x +"<br>";
+}
+document.getElementById('of1').innerHTML =ofpri;
+const sunWater =["Sun","adfsd","BMW", "Volvo", "Mini"];
+let ofx ="";
+for (let x of sunWater){
+    ofx += x + "<br>";
+};
+document.getElementById('of2').innerHTML = ofx;
+let ips =0;
+let ipsPrint ="";
+while(ips<10){
+    ipsPrint += "Hi" +ips +"<br>";
+    ips ++;
+}
+document.getElementById('of3').innerHTML =ipsPrint;

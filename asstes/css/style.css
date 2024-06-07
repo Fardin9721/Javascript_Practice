@@ -35,3 +35,10 @@
 .ifelse{
     background-color: cadetblue;
 }
+.loop_area{
+    display: flex;
+}
+.for_of {
+    display: flex;
+    justify-content: center;
+}
