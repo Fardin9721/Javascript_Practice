@@ -303,3 +303,34 @@ while(ips<10){
     ips ++;
 }
 document.getElementById('of3').innerHTML =ipsPrint;
+let jata =5;
+let jataP ="";
+for (i =0; i < jata ;i++){
+    if(i==3){continue;}
+    jataP += "The number"+i +"<br>";
+}
+document.getElementById('of4').innerHTML =jataP;
+// SET 
+const shafin = new Set(["All","Mojition","is"]);
+shafin.add("Chika");
+shafin.delete("Chika");
+shafin.add("Gu Mojid");
+let text6 ="";
+shafin.forEach(myValer);
+document.getElementById('set2').innerHTML=text6;
+function myValer(value){
+    text6 +=value+"<br>";
+}
+// Map area 
+const mapss = new Map([
+    ["Fast Name","sumit"],
+    ["lastNames",200],
+    ["age",30],
+    ["work",300]
+])
+let maptext ="";
+mapss.forEach(listOfMaps);
+document.getElementById('set2').innerHTML=maptext;
+function listOfMaps(value,key){
+    maptext+= key + ':'+value+"<br>";
+}
