@@ -373,3 +373,19 @@ const naimName ={
     lastName:"Islam"
 }
 document.getElementById('thisPara').innerHTML=naim.fullName.call(naimName);
+// Class area
+class CableONE {
+    constructor(deperment,emplory){
+        this.deperment =deperment;
+        this.emplory = emplory;
+    };
+    work(chap){
+        return this.deperment + " work for Box repair by "+this.emplory+"Person " +chap;
+    }
+    work1(){
+        return this.deperment+ " Work for Money "+this.emplory+"Person";
+    }
+}
+const khos =new CableONE("Service Center",11);
+const khos1 =new CableONE("Acounts",5);
+document.getElementById('clss').innerHTML = khos.work("Onk basi") +"<br>"+ khos1.work1();
