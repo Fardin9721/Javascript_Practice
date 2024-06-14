@@ -1,4 +1,4 @@
-
+// "use strict";
 // Object 
 const leon ={
     fastName :"Fardin",
@@ -349,3 +349,27 @@ function changethis(){
     let text = document.getElementById('sree').innerHTML;
     document.getElementById('sree').innerHTML=text.replace(/cow/ig,"(Dog)");
 };
+hlww();
+function hlww(){
+    console.log("Hello27");
+}
+const maloma ={
+    fastName: 'Fardin',
+    lestName: 'Ahasan',
+    id:60,
+    fullName:function(){
+        return this.fastName+ " " + this.lestName;
+    }
+}
+
+document.getElementById('this_is').innerHTML=maloma.fullName();
+const naim ={
+    fullName:function(){
+        return this.fastName + " " + this.lastName;
+    }
+}
+const naimName ={
+    fastName:"Naim",
+    lastName:"Islam"
+}
+document.getElementById('thisPara').innerHTML=naim.fullName.call(naimName);
