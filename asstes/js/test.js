@@ -313,13 +313,11 @@ document.getElementById('of4').innerHTML =jataP;
 // SET 
 const shafin = new Set(["All","Mojition","is"]);
 shafin.add("Chika");
-shafin.delete("Chika");
-shafin.add("Gu Mojid");
-let text6 ="";
-shafin.forEach(myValer);
-document.getElementById('set2').innerHTML=text6;
-function myValer(value){
-    text6 +=value+"<br>";
+let shai = "";
+shafin.forEach(alishafin);
+document.getElementById('set1').innerHTML =shai;
+function alishafin(value){
+    shai += value +"<br>";
 }
 // Map area 
 const mapss = new Map([
@@ -334,3 +332,20 @@ document.getElementById('set2').innerHTML=maptext;
 function listOfMaps(value,key){
     maptext+= key + ':'+value+"<br>";
 }
+let vqty = 20;
+let chp = 20;
+let sum = vqty * chp;
+let vag = sum / 60;
+document.getElementById('time_sume').innerHTML = vag;
+let bins =(480).toString(2);
+console.log(bins);
+let dcmm =(bins).toString(10);
+console.log(dcmm);
+let consvar = 1111 & 1001;
+console.log(consvar);
+let reg = "The cow is domistice animal,co 'is' vary bog size";
+// let n = reg.search(/coW/i);
+function changethis(){
+    let text = document.getElementById('sree').innerHTML;
+    document.getElementById('sree').innerHTML=text.replace(/cow/ig,"(Dog)");
+};
