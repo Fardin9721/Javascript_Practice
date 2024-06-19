@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
     max-width: 1400px;
     margin: auto;
@@ -42,3 +47,94 @@
     display: flex;
     justify-content: center;
 }
+.accodum {
+    width: 70%;
+    margin: auto;
+    padding: 100px 0;
+}
+.accodum h1{
+    padding-bottom: 20px;
+}
+.accordion{
+    width: 100%;
+    transition: 0.4s;
+}
+.contentBx{
+    position: relative;
+    padding: 4px 20px;
+    transition: 0.4s;
+}
+.lable{
+    position: relative;
+    padding: 10px;
+    background-color: #e08f8f;
+    color: black;
+    cursor: pointer;
+    text-align: start;
+    transition: 0.4s;
+}
+.content ::after{
+    content: '+';
+    position:absolute;
+    top:50%;
+    right: 50px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.active .content ::after{
+    content: '-';
+    top:10%;
+}
+ .content{
+    background-color: #fff;
+    color: black;
+    height: 0;
+    overflow: auto;
+    transition: 0.4s;
+ }
+ .active .content{
+    height: auto;
+    padding: 10px 20px;
+ }
+ .accodianmm_area{
+    width: 100%;
+    margin: auto;
+ }
+ .accodumBox{
+    position: relative;
+    padding: 2px 20px;
+    transition: 0.5s;
+ }
+ .sec1{
+    position: relative;
+    border: none;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    text-align: start;
+    cursor: pointer;
+ }
+.sec1::after{
+    content: '\02795';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    /* font-size: 1.5em; */
+}
+ .acccArea{
+    background-color: aliceblue;
+    color: black;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+ }
+ .active .acccArea{
+    height: auto;
+    padding: 20px;
+ }
+ .active .sec1::after{
+    content: '\2796';
+    font-size: 1.5em;
+ }

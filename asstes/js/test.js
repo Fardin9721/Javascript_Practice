@@ -389,3 +389,16 @@ class CableONE {
 const khos =new CableONE("Service Center",11);
 const khos1 =new CableONE("Acounts",5);
 document.getElementById('clss').innerHTML = khos.work("Onk basi") +"<br>"+ khos1.work1();
+// Accordion
+const accordion = document.getElementsByClassName('contentBx');
+for(i = 0; i<accordion.length; i++){
+    accordion[i].addEventListener('click' , function(){
+        this.classList.toggle('active')
+    })
+}
+const acodd =document.getElementsByClassName('accodumBox');
+for(let i =0; i<acodd.length; i ++){
+    acodd[i].addEventListener("click", function(){
+        this.classList.toggle('active')
+    })
+}
