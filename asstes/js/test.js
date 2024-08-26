@@ -1,4 +1,4 @@
-// "use strict";
+  // "use strict";
 // Object 
 const leon ={
     fastName :"Fardin",
@@ -6,7 +6,7 @@ const leon ={
     age:27,
     color : "Dark",
     fullName : function (){
-        return this.fastName + " " + this.lastName;
+        return this.fastName + " " + this.lastName + " and He is "+ this.age +" Yers Old";
     },
     job: function(){
         console.log("CableONE");
@@ -402,3 +402,31 @@ for(let i =0; i<acodd.length; i ++){
         this.classList.toggle('active')
     })
 }
+function forTexst(a,b) {
+    return a+b;
+}
+console.log(forTexst(10,20));
+document.getElementById('orabhai').innerHTML=forTexst(10,20);
+const oraBHaire =["maloma","ami","koelam","ki",59,"oraBHAI re Bhai",];
+let orabhaiDori ="";
+for (let i =0; i<oraBHaire.length; i++){
+    orabhaiDori += oraBHaire[i] +"</br>";
+}
+document.getElementById('djsakf').innerHTML = orabhaiDori;
+const objrt ={
+    form : "Dhaka",
+    to : "Rangpur",
+    kmp : 300,
+    by : "Bus",
+
+};
+console.log(objrt);
+
+// Object Detailes
+
+const rasel ={
+    name:"Souab Ulla",
+    age:26,
+};
+let sumetBhai = 'age';
+console.log(rasel);
