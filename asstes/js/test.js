@@ -422,23 +422,7 @@ const objrt ={
 };
 console.log(objrt);
 
-// Object Detailes
 
-const rasel ={
-    name:"Souab Ulla  ",
-    age:26,
-};
-rasel.countey=" Bangledesh";
-rasel.age=30;
-// delete rasel.age;     
-let sumetBhai = 'age';
-console.log(rasel[sumetBhai]);
-document.getElementById("raselVaiper").innerHTML = rasel.name +" Is " +rasel.age;
-let kisuakta = "";
-for (let x in rasel){
-    kisuakta += rasel[x];
-};
-console.log(kisuakta);
 // Object_area 
 function Oneplus(model,cpu,ram,display,pp){ //constructor function
     this.phoneModel = model;
@@ -452,7 +436,9 @@ function Oneplus(model,cpu,ram,display,pp){ //constructor function
 };
 const nord50 = new Oneplus("Nord SE 50","SD 509","4GB","6.7 Inche","1599tk Only.");
 const ner4 = new Oneplus("Nord 4lite","SD 845","8GB","6.7 Inche","26000 Only.");
-
+Oneplus.prototype.country='Bangladesh';
+console.log(ner4);
+console.dir(ner4);
 let pText ='';
 for (let x in nord50){
     pText+=nord50[x] +"<br>";
