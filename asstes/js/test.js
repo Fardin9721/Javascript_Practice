@@ -432,7 +432,7 @@ function Oneplus(model,cpu,ram,display,pp){
     this.phoneRam = ram;
     this.phoneDisplay = display;
     this.phonePrice = pp;
-    this.price=function(){
+    this.price= function(){
         return this.pp;
     };
 };
@@ -446,3 +446,31 @@ for (let x in nord50){
     pText+=nord50[x] +"<br>";
 }
 document.getElementById('oOne').innerHTML=pText;
+
+// Object Set
+const myset = new Set (["a","b","c","d","a"]);
+// Set value Addd
+myset.add("Hello");
+console.log(myset);
+// Add set Variable
+const addVariaable = new Set(["Hello Set"]);
+const hayBro = "Hay Bro!";
+let yesBro = "Yes Bro!";
+var noBro = "No Bro!";
+addVariaable.add(hayBro);
+addVariaable.add(yesBro);
+addVariaable.add(noBro);
+console.log(addVariaable);
+let setF = "";
+for (let x of addVariaable){
+    setF += x +"<br>";
+}
+document.getElementById('setF').innerHTML = setF + typeof addVariaable;
+console.log(typeof addVariaable);
+// ForEach
+const isere = new Set (["Hi","Kem aso"])
+let textF = "";
+isere.forEach(function(value){
+    textF += value +"<br>";
+});
+document.getElementById('setF2').innerHTML = textF;
