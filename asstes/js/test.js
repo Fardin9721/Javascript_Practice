@@ -424,7 +424,9 @@ console.log(objrt);
 
 
 // Object_area 
-function Oneplus(model,cpu,ram,display,pp){ //constructor function
+
+//constructor function
+function Oneplus(model,cpu,ram,display,pp){ 
     this.phoneModel = model;
     this.phoneCpu = cpu;
     this.phoneRam = ram;
