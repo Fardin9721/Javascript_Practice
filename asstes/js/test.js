@@ -423,7 +423,7 @@ const objrt ={
 console.log(objrt);
 
 
-// Object_area 
+// js Object_area 
 
 //constructor function
 function Oneplus(model,cpu,ram,display,pp){ 
@@ -474,3 +474,47 @@ isere.forEach(function(value){
     textF += value +"<br>";
 });
 document.getElementById('setF2').innerHTML = textF;
+
+// Start Javascript Function
+
+function faleon (name,city){
+    return "Hi! i am " + name + " i am form " + city;
+}
+document.getElementById('intro').innerHTML = faleon("LEON","Rangpur.");
+// Function Expressions
+const fnEx =function (job,office){return "I am a " + job + "At " + office};
+document.getElementById('fnEx1').innerHTML = fnEx( "Sr.Eng ","CableONE Rangpur.");
+//Function values
+function fnVl (fast,sec){
+    return "Start office " + fast + " to nonstop " +sec;
+}
+const myOffices = fnVl("Saturday","Thursday.");
+document.getElementById('fnvli').innerHTML =myOffices;
+//Arrow Functions
+const myAr =(x,y) => "My salory is "+ x + " and i working for last "+ y;
+document.getElementById('fnvl2').innerHTML = myAr("1*k","3.8 Yers.");
+//Function Parametrs
+function fnPm (u,v=0){
+    return u+v;
+}
+console.log(fnPm(39));
+//Function Call()
+const engnier = {
+    detiles : function (){
+        return this.name + " is a " + this.post + " at " + this.compani +" and he is  " + this.age +" yers old";
+    }
+};
+const fastOne ={
+    name : "Rokon",
+    post : "Chif Eng",
+    compani : "CableONE",
+    age : 47
+}
+const secOne ={
+    name : "Asik",
+    post : " Area Eng",
+    compani : "GammaInnvation",
+    age : 42
+}
+document.getElementById('fnvl3').innerHTML = engnier.detiles.call(fastOne);
+document.getElementById('fnvl4').innerHTML = engnier.detiles.call(secOne);
