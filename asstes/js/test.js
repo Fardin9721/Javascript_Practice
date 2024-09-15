@@ -432,9 +432,6 @@ function Oneplus(model,cpu,ram,display,pp){
     this.phoneRam = ram;
     this.phoneDisplay = display;
     this.phonePrice = pp;
-    this.price= function(){
-        return this.pp;
-    };
 };
 const nord50 = new Oneplus("Nord SE 50","SD 509","4GB","6.7 Inche","1599tk Only.");
 const ner4 = new Oneplus("Nord 4lite","SD 845","8GB","6.7 Inche","26000 Only.");
@@ -500,8 +497,8 @@ function fnPm (u,v=0){
 console.log(fnPm(39));
 //Function Call()
 const engnier = {
-    detiles : function (){
-        return this.name + " is a " + this.post + " at " + this.compani +" and he is  " + this.age +" yers old";
+    detiles : function (wishis){
+        return this.name + " is a " + this.post + " at " + this.compani +" and he is  " + this.age +" yers old and his hobbe is " + wishis;
     }
 };
 const fastOne ={
@@ -512,9 +509,28 @@ const fastOne ={
 }
 const secOne ={
     name : "Asik",
-    post : " Area Eng",
+    post : "Area Eng",
     compani : "GammaInnvation",
     age : 42
 }
-document.getElementById('fnvl3').innerHTML = engnier.detiles.call(fastOne);
-document.getElementById('fnvl4').innerHTML = engnier.detiles.call(secOne);
+document.getElementById('fnvl3').innerHTML = engnier.detiles.call(fastOne, "Cardrive");
+document.getElementById('fnvl4').innerHTML = engnier.detiles.call(secOne, "tour");
+//Function Closures
+
+//Js class
+class Bus {
+    constructor(cName,bType){
+        this.cName = cName;
+        this.bType = bType;
+    }
+    tPrices(tpec){
+        return this.cName + " is a good buss servics thear are used "+ this.bType+ " Bus and titct PP " + tpec;
+    }
+}
+const sRteavels = new Bus("SR Travels","Hino 1j");
+const nabil = new Bus("Nabil","Hino 1j");
+let cText = "";
+for (let x in sRteavels){
+    cText += sRteavels[x] + "<br>"
+}
+document.getElementById('clas1').innerHTML = sRteavels.tPrices("800BDT") + "<br>" + nabil.tPrices("800BDT");
