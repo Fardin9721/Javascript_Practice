@@ -534,3 +534,14 @@ for (let x in sRteavels){
     cText += sRteavels[x] + "<br>"
 }
 document.getElementById('clas1').innerHTML = sRteavels.tPrices("800BDT") + "<br>" + nabil.tPrices("800BDT");
+//CallBack Function
+function callKoro (kisuAkta){
+    document.getElementById('clasa2').innerHTML = kisuAkta;
+}
+function callFor (fastValue , secValue ,callback){
+    let sum = fastValue + secValue;
+    if(callback){
+        callback(sum);
+    }
+}
+callFor(213,456,callKoro);
