@@ -545,3 +545,35 @@ function callFor (fastValue , secValue ,callback){
     }
 }
 callFor(213,456,callKoro);
+//Callback Pettrn
+const nameEt = true;
+const phoneN =11;
+function singUp (callback){
+    document.getElementById('claas4').innerHTML = "Waiting for Singing prosess...";
+    setTimeout(function(){
+        if(nameEt){
+            callback();
+        }else{
+            document.getElementById('claas5').innerHTML = "Pls Entry your Full Name.";
+        };
+    },2000);
+}
+function pnNum (callback){
+    document.getElementById('claas6').innerHTML="Your Number cheking";
+    setTimeout(function(){
+        if(phoneN >= 11){
+            callback();
+        }else{
+            document.getElementById('claas7').innerHTML = "Your Number is not 11 digits.";
+        };
+    },1000);
+}
+function sigFinel (){
+    document.getElementById('claas8').innerHTML ="Finshing......";
+    setTimeout(function(){
+        document.getElementById('claas9').innerHTML="Congratulation! "+"<br>"+"You are secsessfully SingUp";
+    },4000);
+}
+singUp(function(){
+    pnNum(sigFinel);
+})
