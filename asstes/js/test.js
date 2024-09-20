@@ -577,3 +577,69 @@ function sigFinel (){
 singUp(function(){
     pnNum(sigFinel);
 })
+//Js Promise
+const job = false;
+const promiseName = new Promise (function(resolve,reject){
+    document.getElementById("pro1").innerHTML = "Wait for your Result...";
+    setTimeout(function(){
+        if(job){
+            resolve("Your Offices Tomoworo!");
+        }else{
+            reject(`You don't have a job`);
+        }
+    } ,2000);
+})
+promiseName
+    .then(function(value){
+        document.getElementById('pro2').innerHTML = value;
+    })
+    .catch(function(err){
+        document.getElementById('pro3').innerHTML = err;
+    })
+//Promise Callback
+const cableOparetor = true;
+const qty = 4;
+function cOvarify (){
+    document.getElementById('pro4').innerHTML = "Your Identy prosses on Goning";
+    const promise = new Promise(function(resolve,reject){
+        setTimeout(function(){
+            if(cableOparetor){
+                resolve();
+            }else{
+                reject("You are not Cable Oparator....");
+            }
+        },1000);
+    })
+    return promise;
+}
+function wqty (){
+    document.getElementById('pro5').innerHTML = "Your Parts qty is checking..";
+    const promise = new Promise (function(resolve,reject){
+        setTimeout(function(){
+            if(qty >= 5){
+                resolve()
+            }else{
+                reject("Your Qty is too Low"+"<br>"+"Please add more Qty")
+            }
+        },2000)
+    });
+    return promise;
+}
+function pDone (){
+    document.getElementById('pro6').innerHTML = "Your Parts going prossing";
+    const promise =new Promise (function(resolve){
+        setTimeout(function(){
+            resolve("Your parts is Ready!")
+        },3000)
+    });
+    return promise;
+}
+cOvarify()
+    .then(wqty)
+    .then(pDone)
+    .then(function(value){
+        document.getElementById('pro10').innerHTML = value;
+    })
+    .catch(function(ree){
+        document.getElementById('pro11').innerHTML = ree;
+    })
