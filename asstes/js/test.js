@@ -643,3 +643,6 @@ cOvarify()
     .catch(function(ree){
         document.getElementById('pro11').innerHTML = ree;
     })
+//Documet Area
+const dublePara = document.getElementById('domPara1');
+document.getElementById('domPara2').innerHTML="Bangladesh :" + dublePara.innerHTML;
