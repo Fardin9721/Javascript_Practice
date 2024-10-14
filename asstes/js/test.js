@@ -646,3 +646,18 @@ cOvarify()
 //Documet Area
 const dublePara = document.getElementById('domPara1');
 document.getElementById('domPara2').innerHTML="Bangladesh :" + dublePara.innerHTML;
+//Animation box
+function animationRoll(){
+    const animated = document.querySelector('.animetBox');
+    let pos = 0;
+    const inter = setInterval(doanimet , 3);
+    function doanimet(){
+        if(pos < 350){
+            pos++;
+            animated.style.top = pos + 'px';
+            animated.style.left = pos + 'px';
+        }else{
+            clearInterval(inter);
+        }
+    }
+}
