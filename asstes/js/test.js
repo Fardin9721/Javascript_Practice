@@ -661,3 +661,17 @@ function animationRoll(){
         }
     }
 }
+function changeHobe(){
+    const x = document.querySelector(".inclas");
+    x.value = x.value.toUpperCase();
+}
+function inputkoro(){
+    const x = document.querySelector(".ionkd");
+    x.value = x.value.toUpperCase();
+}
+function ovr(obj){
+    obj.innerHTML = "Hi";
+}
+function oVr(obj){
+    obj.innerHTML = "Hit me"
+}

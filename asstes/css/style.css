@@ -164,3 +164,12 @@
     height: 50px;
     background-color: darkslategrey;
 }
+.manuse_hover{
+    height: 100px;
+    width: 150px;
+    background-color: burlywood;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 30px;
+    color: brown;
+}
