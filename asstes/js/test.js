@@ -673,5 +673,45 @@ function ovr(obj){
     obj.innerHTML = "Hi";
 }
 function oVr(obj){
-    obj.innerHTML = "Hit me"
+    obj.innerHTML = "Hit me";
 }
+function don(obj){
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = "char soytan,tui amr deko pabi mon pabi na";
+}
+const btnD = document.querySelector(".btnC");
+const btnF = document.querySelector(".btnR")
+btnD.addEventListener('click',function(){
+    btnF.innerHTML = "Don't MOVE your Mouse!";
+    console.log("Button!");
+},true);
+const divre = document.querySelector(".yeaho");
+divre.addEventListener('click',function(){
+    console.log('div!');
+},true);
+btnD.addEventListener('mouseout',function(){
+    btnF.innerHTML = "Kotha sunos na";
+    // alert ("fsdjk");
+});
+const btAdd = document.querySelector(".btnNO");
+const btPaas = document.querySelector(".btn_para");
+const btnBad = document.querySelector(".btnRe");
+btAdd.addEventListener('click',function(){
+    btPaas.innerHTML = "Kemon aso?";
+})
+btnBad.removeEventListener('click',function(){
+    btPaas.innerHTML = "Vlo asi";
+})
+function addtag(){
+    const para = document.createElement("h2");
+    const node = document.createTextNode("This is H2 tag form js!");
+    para.appendChild(node);
+    const elementsa = document.querySelector(".nodess");
+    const morage = document.querySelector("#p2");
+    elementsa.insertBefore(para,morage);
+}
+const rebtn = document.getElementById("rebtn");
+    rebtn.addEventListener('click',function(){
+        const revoo = document.getElementById('p1');
+        revoo.remove();
+    });
