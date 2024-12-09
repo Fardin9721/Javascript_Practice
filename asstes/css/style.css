@@ -11,6 +11,15 @@
     margin: auto;
     text-align: center;
 }
+.hidden_panel{
+    max-height: 0;
+    overflow: hidden;
+    text-align: start;
+    margin-left: 40px;
+}
+.show{
+    max-height: 400px;
+}
 .section_padding{
     padding: 100px 0;
 }
@@ -48,6 +57,7 @@
 }
 .loop_area{
     display: flex;
+    flex-flow: column;
 }
 .for_of {
     display: flex;

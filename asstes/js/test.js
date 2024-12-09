@@ -715,3 +715,40 @@ const rebtn = document.getElementById("rebtn");
         const revoo = document.getElementById('p1');
         revoo.remove();
     });
+    const mailestonesData = JSON.parse(data).data;
+    function loadMilestones (){
+        const mailestones = document.querySelector('.milestones');
+        mailestones.innerHTML = `${mailestonesData.map(function(mailestones){
+            return `<div class="milestones">
+                <div class="milestone border-b my-1 cursor-pointer">
+                    <div class="flex p-2">
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="text_area ms-2" onclick="openMilestone(this)">
+                            <p> ${mailestones.name}
+                                <span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hidden_panel">
+                        ${mailestones.modules.map(function(modules){
+                            return `<div class="module border-b">
+                            <p>${modules.name}</p>
+                        </div>`;
+                        }).join(" ")}<br>
+                    </div>
+                </div>
+            </div>`;
+        }).join(" ")}`;
+    }
+    function openMilestone(milestonElement){
+        const currentPanel = milestonElement.parentNode.nextElementSibling;
+        currentPanel.classList.toggle('show');
+    }
+
+    loadMilestones();
+
+    
