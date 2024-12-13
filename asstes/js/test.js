@@ -691,7 +691,7 @@ divre.addEventListener('click',function(){
 },true);
 btnD.addEventListener('mouseout',function(){
     btnF.innerHTML = "Kotha sunos na";
-    // alert ("fsdjk");
+    alert ("fsdjk");
 });
 const btAdd = document.querySelector(".btnNO");
 const btPaas = document.querySelector(".btn_para");
@@ -750,5 +750,5 @@ const rebtn = document.getElementById("rebtn");
     }
 
     loadMilestones();
-
+alert("document.qu");
     
